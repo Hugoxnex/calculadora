@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<h2>JavaScript - Calculadora</h2>
+
+<hr>
+
+<p>VALOR:
+
+<input id="n1" value="5" />
+
+<p>VALOR:
+
+<input id="n2" value="5" />
+
+</br></br>
+
+<button onclick="document.getElementById('ex13').innerHTML = calcula('+')">+</button>
+
+<button onclick="document.getElementById('ex13').innerHTML = calcula('-')">-</button>
+
+<button onclick="document.getElementById('ex13').innerHTML = calcula('*')">*</button>
+
+<button onclick="document.getElementById('ex13').innerHTML = calcula('/')">/</button>
+
+<p>RESULTADO:
+
+<input id="ex13" value="0" />
+
+<script>
+
+function calcula(op) {
+
+  n1 = document.getElementById("n1").value;
+
+  n2 = document.getElementById("n2").value;
+
+  if (op == "+"){
+
+      document.getElementById('ex13').value = parseInt(n1) + parseInt(n2);
+
+  } else if (op == "-"){
+
+      document.getElementById('ex13').value = parseInt(n1) - parseInt(n2);
+
+  } else if (op == "*"){
+
+      document.getElementById('ex13').value = parseInt(n1) * parseInt(n2);
+
+  } else if (op == "/"){
+
+      document.getElementById('ex13').value = parseInt(n1) / parseInt(n2);
+
+  }
+
+}
+
+</script>
+
+</body>
+
+</html>
